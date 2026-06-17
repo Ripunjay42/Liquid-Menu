@@ -1,0 +1,6 @@
+{
+  "name": "The Liquid Menu",
+  "description": "An elite interactive, scroll-driven portfolio experience for Hemakshe Nagaraj — Brand Advocate & Mixologist.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

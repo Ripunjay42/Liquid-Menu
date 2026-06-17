@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:wght@300;400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom fine-printed speakeasy styles & utility declarations */
+@layer utilities {
+  .parchment-glow {
+    text-shadow: 0 0 12px rgba(232, 223, 200, 0.2);
+  }
+  .gold-glow {
+    text-shadow: 0 0 15px rgba(201, 168, 76, 0.35);
+  }
+}
+
+/* Custom scrollbar matching dark luxury theme */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0906;
+}
+::-webkit-scrollbar-thumb {
+  background: #3a342a;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6b5520;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #0a0906;
+  color: #e8dfc8;
+}
+
+/* Reduced motion considerations */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-delay: 0s !important;
+    animation-duration: 0s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0s !important;
+    scroll-behavior: auto !important;
+  }
+}
